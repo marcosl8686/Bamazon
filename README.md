@@ -1,21 +1,22 @@
-  # HW - flashcard application
+  # HW - Bamazon
 
-## Create your own Flashcard! simply add your complete text and asign the cozed word enjoy your customed FlashCard.
+## Amazon-like storefront with MYSQL.The app will take orders from customers and deplete stock from the store's inventory. Manager will be able to add or remove items and stock quantity.
 
 ## Requirements
-flash card built this way has three parts:
+Use MYSQL database to create a Amazon-like store.
 
-   - Prompt the user to input the **full text**. This is the entire sentence users need to remember:  _"George Washington was the first president of the United States."_
+   - Customer should be able to see the entire item list table, prompt the user to select an item based on item ID#, then user should be able to buy X amount of the item desired. this will update the inventory, if quantity requested is larger then the amount in stock, user should get an alert and the transaction needs to stop.
     
-   - Prompt the user to choose the **cloze deletion**. This is the text we've chosen to remove: _"George Washington"_.
-   - Display the **partial text**. This is what we get if we remove the **cloze deletion** from the **full text**: _"... was the first president of the United States._
-   - Prompt the user to guess the correct answer. Keep track of correct and incorrect answers.
-   
+   - Manager should be able to see the entire item list table. Then he should be able to narrow the list of items to see items with low inventory. Manager should be able update the inventory and also add new products to the shop.
 
+  
 
 ## Technologies Used
 - Javascript
 - Node.js
+- MYSQL
 
 
 -------------
+
+
