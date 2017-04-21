@@ -14,4 +14,4 @@ Use MYSQL database to create a Amazon-like store.
  - MYSQL
 
  --------------
- -
+ ![bamazon](https://cloud.githubusercontent.com/assets/14324709/25288893/41195e2a-267c-11e7-9f3f-d4eee8f7cfdd.gif)
