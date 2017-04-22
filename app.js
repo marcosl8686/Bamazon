@@ -125,6 +125,15 @@ var addItem = function(name, department, price, qty) {
 
 };
 
+var supervisorView = function() {
+    connection.query('SELECT * FROM departments', function(err, response) {
+        if (err) throw err;
+
+        console.table(response);
+        // prompt.managerEdit();
+    });
+};
+
 
 
 
@@ -136,5 +145,6 @@ module.exports = {
     lowInvView,
     addIventoryView,
     addIventory,
-    addItem
+    addItem,
+    supervisorView
 };

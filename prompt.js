@@ -54,6 +54,13 @@ var addNewItem = [{
     message: 'stock Quantity?'
 }];
 
+var supervisorPrompt = {
+    type: 'rawlist',
+    name: 'choices',
+    message: 'What would you like to do?',
+    choices: ['View Product by Department', 'Create New Department']
+};
+
 
 var purchase = function() {
     var app = require("./app.js");
@@ -128,9 +135,22 @@ var keepShop = function() {
     });
 };
 
+var supervisor = function() {
+    var app = require("./app.js");
+    inquirer.prompt(supervisorPrompt).then(function(answer) {
+
+        if (answer.choices === "View Product by Department") {
+            app.supervisorView();
+        } else {
+            console.log("BYE!")
+        }
+    });
+};
+
 module.exports = {
     purchase,
     keepShop,
     managerEdit,
-    addView
+    addView,
+    supervisor
 };
